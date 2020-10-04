@@ -1,0 +1,81 @@
+.chatbox {
+  height: 100%;
+}
+
+.chat {
+  position: relative;
+  height: 100%;
+}
+
+.chat .chat-user {
+  background: #A82121;
+  color: #fff;
+  font-family: monospace;
+  font-weight: bold;
+  /* height: 30px; */
+  padding: 8px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.chat .chat-form {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 15px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.chat .chat-form div {
+  position: relative;
+}
+
+.chat .chat-form div img {
+  width: 50px;
+  position: absolute;
+  margin-left: 5px;
+  cursor: pointer;
+  height: 60px;
+  top: -10px;
+}
+
+.chat .chat-form div input {
+width: 85%;
+border: 1px solid #bdbdbd;
+padding: 10px;
+border-radius: 8px;
+}
+
+.chat .chat-center {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.chat .chat-center .chat-txt {
+height: 75%;
+margin-top: 35px;
+overflow: visible;
+}
+
+.chat .chat-center .chat-txt .txt {
+  height: 30px;
+  line-height: 30px;
+  padding: 19px 17px;
+}
+
+.chat .chat-center .chat-txt .txt span {
+  font-family: fantasy;
+  border: 2px solid #A82121;
+  padding: 7px;
+  border-radius: 7px;
+}
+
+.txt.question {
+  text-align: left;
+}
+
+.txt.answer {
+  text-align: right;
+}

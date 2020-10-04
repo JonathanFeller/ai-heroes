@@ -1,0 +1,271 @@
+.container{
+  max-width: 1420px;
+  margin: auto;
+  height: 100%;
+}
+
+a{
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+div.page-board{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.section-video{
+  width: 70%;
+  height: 100%;
+}
+
+.section-video .mascota{
+  height: 100%;
+}
+
+.section-video .mascota img{
+  width: 100%;
+  height: 100%;
+}
+
+.section-personaje{
+  display: inline-block;
+  height: 100%;
+  width: 35%;
+}
+
+.section-personaje .blackboard{
+  width: 100%;
+  text-align: center;
+  background: #b9b9b9;
+  height: 50%;
+}
+
+.section-personaje .mascota{
+  width: 50%;
+  text-align: center;
+}
+
+.section-personaje img{
+  width: 90%;
+ height: 100%;
+}
+
+.section-personaje .line{
+  position: relative;
+  z-index: 2;
+  width: 5px;
+  cursor: col-resize;
+  background: #59b991;
+}
+
+.section-chat .line{
+  background: #59b991;
+  -webkit-box-shadow: 0 0 1px black;
+  box-shadow: 0 0 1px black;
+  height: 5px;
+  cursor: row-resize;
+  position: relative;
+  z-index: 10;
+}
+
+.asignature{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  grid-template-columns: 30.3% 30% 30%;
+}
+
+.asignature div{
+  display: grid;
+  grid-template-columns: 75px auto;
+  background: #A82121;
+  margin: 5px;
+  border-radius: 8px;
+  height: 75px;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+
+}
+
+.asignature div:hover{
+  background: #eaa708;
+  transform: scale(1.05);
+  -webkit-box-shadow: 10px 10px 19px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 19px -13px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 19px -13px rgba(0,0,0,0.75);
+}
+
+.asignature div p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 48px;
+}
+
+.asignature div img{
+  width: 75px;
+  height: 75px;
+}
+
+.text-carrusel{
+  background: #fff;
+  padding: 10px 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+  font-weight: 600;
+}
+
+.text-carrusel p{
+  margin: 0;
+}
+
+.parallax{
+  background-image: url(../assets/fondo-ingreso.jpg);
+  height: 255px;
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 45px 0;
+}
+
+.start-logo img{
+  width: 40%;
+}
+
+.name-user{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+} 
+.carrusel-photos{
+  display: flex;
+  width: 100%;
+}
+
+.carrusel-photos .item{
+  width: 280px;
+  margin: auto;
+  text-align: center;
+}
+
+.owl-nav button span{
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  background: #73E9B9;
+  font-family: monospace;
+  border-radius: 90px;
+  padding: 0 9px;
+}
+
+.owl-nav button span:hover{
+  background: #61b593
+}
+
+.owl-nav{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-height: 50px;
+  margin: auto;
+  z-index: 0;
+}
+
+.owl-nav .owl-prev{
+  position: absolute;
+  left: 40px;
+}
+
+.owl-nav .owl-next{
+  position: absolute;
+  right: 40px;
+}
+
+.owl-carousel .owl-item img {
+  max-height: 480px;
+  max-width: 280px;
+  margin: auto;
+}
+
+.owl-stage{
+  transform: translate3d(-640px, 0px, 0px);
+}
+
+.start-logo{
+  animation: scale 3s infinite;
+  position: absolute;
+}
+
+.user-account{
+  height: 100%;
+  position: relative;
+}
+
+.cintas{
+  height: 42px;
+  background: #3a3a3a;
+  line-height: 42px;
+  margin-bottom: 30px;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.videos{
+  margin-bottom: 50px;
+}
+
+@media (max-width: 950px){
+  .section-personaje{
+      flex-direction: column;
+  }
+  .section-personaje .blackboard{
+      width: 100%;
+      overflow-y: hidden;
+  }
+  .section-personaje .line{
+      display: none;
+  }
+  .section-personaje .mascota {
+      width: 100%;
+      text-align: center;
+      margin-top: 50px;
+  }
+  .section-chat .line{
+      display: none;
+  }
+  .asignature{
+      height: auto;
+  }
+  .section-personaje .blackboard .user-account {
+      /* height: 50%; */
+      height: 100%;
+
+  }
+}
+@media (max-width: 840px){
+div.page-board {
+  display: inline-block;
+}
+
+.section-personaje {
+  width: 100%;
+}
+
+.section-video {
+  width: 100%;
+}
+}
+@keyframes scale{
+  0% { transform: scale(0.9); }
+  50% { transform: scale(0.8); }
+  100% { transform: scale(0.9); }
+}

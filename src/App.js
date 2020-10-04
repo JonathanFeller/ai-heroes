@@ -4,18 +4,16 @@ import './App.css';
 
 import logo from './logo.png';
 import Home from './components/home';
-import About from './components/about';
+import Heroes from './components/heroes';
 import Demo from './components/demo';
 
 const App = () => (
   <Router>
     <div className="App">
       <div className="App-header">
-        <Link to="/">
-          <img src={logo} className="App-logo" alt="A.I. Heroes"/>
-        </Link>
+        <Link to="/"><img src={logo} className="App-logo" alt="A.I. Heroes" /></Link>
         <div>
-          <Link className="App-link" to="/about">About</Link>
+          <Link className="App-link" to="/heroes">Heroes</Link>
           <Link className="App-link" to="/demo">Demo</Link>
         </div>
       </div>
@@ -24,8 +22,8 @@ const App = () => (
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/about">
-          <About />
+        <Route path="/heroes">
+          <Heroes />
         </Route>
         <Route path="/demo">
           <Demo />
