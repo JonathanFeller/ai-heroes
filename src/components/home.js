@@ -8,12 +8,14 @@ const Home = () => (
       <img src={'./assets/heroes/Galileo Galilei.png'} alt="Galileo Galilei" />
       <img src={'./assets/heroes/Hypatia of Alexandria.png'} alt="Hypatia of Alexandria" />
       <img src={'./assets/heroes/Kalpana Chawla.png'} alt="Kalpana Chawla" />
+    </div>
+    <p>You can learn about their own scientific theories, contrast what they had at their time in contrast to the information</p>
+    <div className="mascots">
       <img src={'./assets/heroes/Marie_Curie.png'} alt="Marie Curie" />
       <img src={'./assets/heroes/Neil_Armstrong.png'} alt="Neil Armstrong" />
       <img src={'./assets/heroes/Newton-.png'} alt="Newton" />
       <img src={'./assets/heroes/Ramanujan.png'} alt="Ramanujan" />
     </div>
-    <p>You can learn about their own scientific theories, contrast what they had at their time in contrast to the information</p>
   </main>
 );
 

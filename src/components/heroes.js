@@ -1,30 +1,14 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import './heroes.css';
-import Slider from 'react-slick';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.min.css';
+import 'owl.carousel/dist/assets/owl.theme.default.min.css';;
 
 const Heroes = () => {
   const history = useHistory();
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    centerMode: true
-  };
-
   const heroes = [
-    {
-      image: 'Albert_Einstien.png',
-      name: "Albert Einstein",
-      quote: "Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.",
-      location: "Germany",
-      occupation: "Theorical physicist",
-      contribuitions: "General Relativity, Gravitational Waves, Wormholes",
-      available: true
-    },
     {
       name: "Marie Curie",
       quote: "Life is not easy for any of us. But what of that? We must have perseverance and above all confidence in ourselves. We must believe that we are gifted for something and that this thing must be attained.",
@@ -32,6 +16,15 @@ const Heroes = () => {
       occupation: "Physicist, Chemist",
       contribuitions: "Discovered radioactivity, Championed use of portable X- rays, Found polonium and radium",
       available: false
+    },
+    {
+      image: './assets/heroes/Albert_Einstien.png',
+      name: "Albert Einstein",
+      quote: "Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.",
+      location: "Germany",
+      occupation: "Theorical physicist",
+      contribuitions: "General Relativity, Gravitational Waves, Wormholes",
+      available: true
     },
     {
       name: "Isaac Newton",
@@ -108,7 +101,7 @@ const Heroes = () => {
       <div className="item">
         <div className="card">
           <div className="image-card">
-            <img src={`assets/${hero.image}`} alt={hero.name} />
+            <img src={hero.image} alt={hero.name} />
           </div>
           <div className="name-card">
             <h2>{hero.name}</h2>
@@ -127,12 +120,7 @@ const Heroes = () => {
             </div>
           </div>
           <div className="card-theme">
-            <p>Main Theories</p>
-            <div className="card-theme-item">
-              <div>General</div>
-              <div>Gravitational</div>
-              <div>Wormholes</div>
-            </div>
+            <p>{hero.contribuitions}</p>
           </div>
           <div className="card-btn">
             {hero.available ? <button type="button" onClick={handleClick}>I want to meet him</button> : <div>Not available</div>}
@@ -143,10 +131,10 @@ const Heroes = () => {
   );
 
   return (
-    <div className="Heroes-container">
-      <Slider {...settings}>
+    <div className="Heroes-container" style={{ padding: '40px' }}>
+      <OwlCarousel>
         {renderCards()}
-      </Slider>
+      </OwlCarousel>
     </div>
   );
 };

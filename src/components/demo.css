@@ -143,66 +143,6 @@ div.page-board{
   font-weight: 400;
   color: #fff;
 } 
-.carrusel-photos{
-  display: flex;
-  width: 100%;
-}
-
-.carrusel-photos .item{
-  width: 280px;
-  margin: auto;
-  text-align: center;
-}
-
-.owl-nav button span{
-  color: #fff;
-  font-size: 26px;
-  font-weight: bold;
-  background: #73E9B9;
-  font-family: monospace;
-  border-radius: 90px;
-  padding: 0 9px;
-}
-
-.owl-nav button span:hover{
-  background: #61b593
-}
-
-.owl-nav{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  max-height: 50px;
-  margin: auto;
-  z-index: 0;
-}
-
-.owl-nav .owl-prev{
-  position: absolute;
-  left: 40px;
-}
-
-.owl-nav .owl-next{
-  position: absolute;
-  right: 40px;
-}
-
-.owl-carousel .owl-item img {
-  max-height: 480px;
-  max-width: 280px;
-  margin: auto;
-}
-
-.owl-stage{
-  transform: translate3d(-640px, 0px, 0px);
-}
-
-.start-logo{
-  animation: scale 3s infinite;
-  position: absolute;
-}
-
 .user-account{
   height: 100%;
   position: relative;

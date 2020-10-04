@@ -47,8 +47,7 @@ body {
   height: calc(100vh - 60px);
   background-color: rgb(36,38,39);
   align-items: center;
-  justify-content: flex-end;
-  padding-bottom: 40vh;
+  justify-content: center;
 }
 
 .Home-main > p {
@@ -67,4 +66,12 @@ body {
 
 .mascots img {
   height: 200px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  text-align: center;
 }
