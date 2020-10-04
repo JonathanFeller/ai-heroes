@@ -16,12 +16,16 @@ const ChatBox = () => {
   );
 
   const handleSendMessage = () => {
-    setMessages(messages.concat({
+    setMessages([...messages, {
       text: message,
       type: 'question'
-    }));
+    }]);
     setMessage('');
   };
+
+  const handleEnterKey = (e) => {
+    if (e.keyCode === 13) handleSendMessage();
+  }
 
   const handleChange = (e) => {
     setMessage(e.target.value);
@@ -30,17 +34,13 @@ const ChatBox = () => {
   return (
     <div className="chatbox">
       <div className="chat">
-        <div className="chat-user">
-          ALBERT EINSTEIN
-            </div>
+        <div className="chat-user">ALBERT EINSTEIN</div>
         <div className="chat-center">
-          <div className="chat-txt">
-            {renderChat()}
-          </div>
+          <div className="chat-txt">{renderChat()}</div>
         </div>
         <div className="chat-form">
           <div>
-            <input type="text" placeholder="Type your text" value={message} onChange={handleChange} />
+            <input type="text" placeholder="Type your question here" value={message} onChange={handleChange} onKeyDown={handleEnterKey} />
             <img src="https://www.iconfinder.com/data/icons/pinterest-ui-flat/48/Pinterest_UI-09-64.png" alt="Send" onClick={handleSendMessage} />
           </div>
         </div>
