@@ -5,6 +5,7 @@ import './App.css';
 import logo from './logo.png';
 import Home from './components/home';
 import Heroes from './components/heroes';
+import Example from './components/example';
 import Demo from './components/demo';
 
 const App = () => (

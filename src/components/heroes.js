@@ -1,12 +1,24 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import './heroes.css';
+import Slider from 'react-slick';
+import albertEinsten from '../assets/heroes/Albert_Einstien.png';
 
 const Heroes = () => {
   const history = useHistory();
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true
+  };
+
   const heroes = [
     {
+      image: 'Albert_Einstien.png',
       name: "Albert Einstein",
       quote: "Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.",
       location: "Germany",
@@ -97,13 +109,13 @@ const Heroes = () => {
       <div className="item">
         <div className="card">
           <div className="image-card">
-            <img src="image/Dorothy Vaughan.png" alt={hero.name} />
+            <img src={`assets/${hero.image}`} alt={hero.name} />
           </div>
           <div className="name-card">
             <h2>{hero.name}</h2>
           </div>
           <div className="card-description">
-            <p>{hero.quote}</p>
+            <p>"{hero.quote}"</p>
           </div>
           <div className="card-option">
             <div className="card-ubication">
@@ -132,19 +144,10 @@ const Heroes = () => {
   );
 
   return (
-    <div className="container">
-      <div className="information-start">
-        <div className="start">
-          <div className="start-text">
-            <h2>
-              Select your A.I. Hero / A.I. Heroine
-            </h2>
-          </div>
-          <div className="carrousel-pets owl-carousel">
-            {renderCards()}
-          </div>
-        </div>
-      </div>
+    <div className="Heroes-container">
+      <Slider {...settings}>
+        {renderCards()}
+      </Slider>
     </div>
   );
 };

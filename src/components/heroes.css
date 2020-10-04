@@ -1,12 +1,11 @@
-.container {
-  max-width: 1420px;
-  margin: auto;
+.Heroes-container {
+  background-image: url("../assets/fondo-ingreso2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100%;
-}
-
-a {
-  text-decoration: none;
-  box-sizing: border-box;
+  width: 100%;
+  padding: 40px;
+  margin: 0;
 }
 
 .information-start {
@@ -18,10 +17,10 @@ height: 100%;
 
 .start {
   padding: 15px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   color: #1e1e1e;
 }
+
 .start .start-text h2 {
   margin: 0;
   color: #fff;
@@ -29,25 +28,18 @@ height: 100%;
   text-transform: uppercase;
   animation: scale 3s infinite;
 }
+
 .start-text {
   margin-bottom: 15px;
 }
+
 .start-logo {
   text-align: center;
   margin-bottom: 20px;
 }
+
 .start-logo img {
   width: 80%;
-}
-.start .carrousel-pets .item img {
-  max-width: 260px;
-  margin: auto;
-  /* max-height: 53px; */
-  min-height: 201px;
-}
-.start .carrousel-pets .item {
-  max-width: 250px;
-  margin: auto;
 }
 
 .start div .btn {
@@ -69,92 +61,19 @@ height: 100%;
 .start div .btn:hover {
   background: #000000;
 }
-.carrousel-pets {
-  display: flex;
-  width: 800px;
-  margin: auto;
-  height: 495px;
-}
-.carrousel-pets .item {
-  width: 300px;
-}
-.owl-nav button span {
-  color: #ffffff;
-  font-size: 26px;
-  font-weight: bold;
-  font-family: monospace;
-  padding: 0 15px;
-  font-size: 74px;
-}
 
-/* .owl-nav button span:hover{
-  background: #61b593
-} */
-
-.owl-nav {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  max-height: 50px;
-  margin: auto;
-  z-index: 0;
-}
-
-.owl-nav .owl-prev {
-  position: absolute;
-  left: 40px;
-  animation: scale 1s infinite;
-  color: #fff;
-}
-
-.owl-nav .owl-next {
-  position: absolute;
-  right: 40px;
-  animation: scale 1s infinite;
-}
-
-.owl-carousel .owl-item img {
-  min-height: 350px;
-}
-
-.owl-item {
-  transform: scale(0.1);
--ms-transform: scale(0.1);
-opacity: 0.5;
-z-index: 2;  
-}
-
-.owl-item.active.center {
-  transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  opacity: 1;
-  z-index: 3;
-}
-
-.owl-carousel .owl-stage-outer {
-  padding: 45px 0;
-}
-
-/* .user-account{
-  background-image: url(../image/fondo-ingreso.jpg);
-  background-attachment: fixed;
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: contain;
-} */
 .card .image-card img {
   width: 100%;
 }
 
 .card {
+  width: 300px;
   background: #fff;
   border-radius: 35px;
   padding: 60px 15px 15px;
 }
 
 .card .image-card {
-  position: absolute;
   top: -7px;
   left: 0;
   width: 100%;
@@ -242,52 +161,4 @@ border-right: 1px solid;
   -moz-box-shadow: 10px 10px 27px -12px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 27px -12px rgba(0,0,0,0.75);
   cursor: pointer;
-}
-
-.start .carrousel-pets .owl-item .item {
-  padding: 40px 0;
-}
-.start .carrousel-pets .owl-item.active .item {
-  padding: 115px 0 0;
-}
-@media (max-width: 1240px){
-  .container {
-      max-width: 920px;
-      margin: auto;
-  }
-  
-}
-@media (max-width: 840px){
-  .container {
-      max-width: 740px;
-      margin: auto;
-  }
-  
-}
-@media (max-width: 540px){
-  body {
-      /*background-image: url("../image/fondo-ingreso2-mbl.jpg");*/
-  }
-  .carrousel-pets {
-      width: 90%;
-      margin: auto;
-  }
-  .start {
-      width: 100%;
-      padding: 0;
-  }
-  .owl-nav .owl-prev {
-      left: -10px;
-  }
-  .owl-nav .owl-next {
-      right: -10px;
-  }
-  .owl-nav button span {
-      color: #38ff9a;
-  }
-}
-@keyframes scale{
-  0% { transform: scale(0.9); }
-  50% { transform: scale(0.8); }
-  100% { transform: scale(0.9); }
 }

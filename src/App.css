@@ -25,6 +25,7 @@ body {
 
 .App-header {
   display: flex;
+  background-color: white;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -44,7 +45,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: calc(100vh - 60px);
-  background: url('./assets/mascots.png') center no-repeat rgb(36,38,39);
+  background-color: rgb(36,38,39);
   align-items: center;
   justify-content: flex-end;
   padding-bottom: 20vh;
@@ -53,4 +54,8 @@ body {
 .Home-main > p {
   color: white;
   font-size: 1.6rem;
+}
+
+.slick-slide img {
+  margin: auto;
 }
