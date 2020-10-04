@@ -2,7 +2,6 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import './heroes.css';
 import Slider from 'react-slick';
-import albertEinsten from '../assets/heroes/Albert_Einstien.png';
 
 const Heroes = () => {
   const history = useHistory();

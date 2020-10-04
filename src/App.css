@@ -48,7 +48,7 @@ body {
   background-color: rgb(36,38,39);
   align-items: center;
   justify-content: flex-end;
-  padding-bottom: 20vh;
+  padding-bottom: 40vh;
 }
 
 .Home-main > p {
@@ -58,4 +58,13 @@ body {
 
 .slick-slide img {
   margin: auto;
+}
+
+.mascots {
+  display: flex;
+  flex-direction: row;
+}
+
+.mascots img {
+  height: 200px;
 }
