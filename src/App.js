@@ -1,16 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
-import logo from './logo.png';
 import './App.css';
 
+import logo from './logo.png';
+import Home from './components/home';
+import About from './components/about';
+import Demo from './components/demo';
 
 const App = () => (
   <Router>
     <div className="App">
       <div className="App-header">
         <Link to="/">
-          <img src={logo} className="App-logo" />
+          <img src={logo} className="App-logo" alt="A.I. Heroes"/>
         </Link>
         <div>
           <Link className="App-link" to="/about">About</Link>
@@ -32,24 +34,5 @@ const App = () => (
     </div>
   </Router>
 );
-
-const Home = () => {
-  return (
-    <h2>Home</h2>
-  );
-}
-
-const About = () => {
-  return (
-    <h2>About</h2>
-  );
-}
-
-const Demo = () => {
-  return (
-    <h2>Demo</h2>
-  );
-}
-
 
 export default App;
