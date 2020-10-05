@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import './heroes.css';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.min.css';
 import 'owl.carousel/dist/assets/owl.theme.default.min.css';;
 
-const Heroes = () => {
+const Heroes = props => {
+
+  useEffect(() => {
+    if (!props.isPlaying) {
+      props.play();
+    }
+  }, [props]);
+
   const history = useHistory();
 
   const heroes = [
