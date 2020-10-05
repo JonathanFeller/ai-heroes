@@ -20,7 +20,7 @@ const Demo = () => (
     </section>
     <section className="section-video">
       <div className="mascota">
-        <img src={fondoIngreso} alt="" />
+        <iframe width="100%" height="100%" src="https://images-assets.nasa.gov/video/GSFC_20181002_SMBH_m13043_Simulation/GSFC_20181002_SMBH_m13043_Simulation~orig.mp4?rel=0&amp;autoplay=1&mute=1&loop=1" frameborder="0" autoplay muted allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </section>
   </div>

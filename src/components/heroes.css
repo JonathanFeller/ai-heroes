@@ -4,15 +4,13 @@
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
-  padding: 40px;
-  margin: 0;
 }
 
 .information-start {
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .start {
@@ -161,4 +159,8 @@ border-right: 1px solid;
   -moz-box-shadow: 10px 10px 27px -12px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 27px -12px rgba(0,0,0,0.75);
   cursor: pointer;
+}
+
+.image-card img {
+  object-fit: contain;
 }

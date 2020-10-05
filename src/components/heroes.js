@@ -10,6 +10,7 @@ const Heroes = () => {
 
   const heroes = [
     {
+      image: './assets/heroes/Marie_Curie.png',
       name: "Marie Curie",
       quote: "Life is not easy for any of us. But what of that? We must have perseverance and above all confidence in ourselves. We must believe that we are gifted for something and that this thing must be attained.",
       location: "Poland",
@@ -27,6 +28,7 @@ const Heroes = () => {
       available: true
     },
     {
+      image: './assets/heroes/Newton-.png',
       name: "Isaac Newton",
       quote: "No great discovery was ever made without a bold guess.",
       location: "England",
@@ -35,6 +37,7 @@ const Heroes = () => {
       available: false
     },
     {
+      image: './assets/heroes/Ramanujan.png',
       name: "Srinivasa Ramanuja",
       quote: "An equation means nothing to me unless it expresses a thought of God.",
       location: "India",
@@ -43,6 +46,7 @@ const Heroes = () => {
       available: false
     },
     {
+      image: './assets/heroes/Neil_Armstrong.png',
       name: "Neil Armstrong",
       quote: "That's one small step for man, one giant leap for mankind.",
       location: "United States",
@@ -51,6 +55,7 @@ const Heroes = () => {
       available: false
     },
     {
+      image: './assets/heroes/Galileo Galilei.png',
       name: "Galileo Galilei",
       quote: "I have never met a man so ignorant that I couldn't learn something from him.",
       location: "Italy",
@@ -59,6 +64,7 @@ const Heroes = () => {
       available: false
     },
     {
+      image: './assets/heroes/Hypatia of Alexandria.png',
       name: "Hypatia of Alexandria",
       quote: "Reserve your right to think, for even to think wrongly is better than not to think at all.",
       location: "Egypt",
@@ -67,6 +73,7 @@ const Heroes = () => {
       available: false
     },
     {
+      image: './assets/heroes/Kalpana Chawla.png',
       name: "Kalpana Chawla",
       quote: "If you want do something, what does it matter where you are ranked?.",
       location: "India",
@@ -75,19 +82,12 @@ const Heroes = () => {
       available: false
     },
     {
+      image: './assets/heroes/Dorothy Vaughan.png',
       name: "Dorothy Vaughan",
       quote: "I changed what I could and what I couldn't, I endured.",
       location: "United States",
       occupation: "Mathematician And Human Computer",
       contribuitions: "The first African-American woman to supervise a goup of staff at the center, Machine computers in the early 1960s by teaching herself and her staff, Vaughan crater on the far side of the Moon was named in her honor",
-      available: false
-    },
-    {
-      name: "Stephen Hawking",
-      quote: "Quiet people have the loudest minds.",
-      location: "England",
-      occupation: "Theoretical Physicist",
-      contribuitions: "Black holes, Relativity theory and Quantum Mechanic, Space-time singularities",
       available: false
     }
   ];
@@ -101,7 +101,7 @@ const Heroes = () => {
       <div className="item">
         <div className="card">
           <div className="image-card">
-            <img src={hero.image} alt={hero.name} />
+            <img height={200} src={hero.image} alt={hero.name} />
           </div>
           <div className="name-card">
             <h2>{hero.name}</h2>
@@ -131,7 +131,7 @@ const Heroes = () => {
   );
 
   return (
-    <div className="Heroes-container" style={{ padding: '40px' }}>
+    <div className="Heroes-container">
       <OwlCarousel>
         {renderCards()}
       </OwlCarousel>
