@@ -167,7 +167,6 @@ div.page-board{
   }
   .section-personaje .blackboard{
       width: 100%;
-      overflow-y: hidden;
   }
   .section-personaje .line{
       display: none;
