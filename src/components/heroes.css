@@ -1,6 +1,6 @@
 .Heroes-container {
   padding-top: calc((50vh - 60px) / 4);
-  background-image: url("../assets/fondo-ingreso2.jpg");
+  background-image: url("https://images-assets.nasa.gov/image/PIA03654/PIA03654~orig.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -20,6 +20,40 @@
   color: #1e1e1e;
 }
 
+.owl-nav{
+  display: block !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  right: 0;
+  z-index: 1;
+  margin: auto;
+}
+.owl-nav button.owl-prev{
+font-size: 100px !important;
+color: #Fff !important;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 30px;
+outline: none;
+}
+.owl-nav button.owl-next{
+  font-size: 100px !important;
+  color: #Fff !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 30px;
+  outline: none;
+  }
+.owl-carousel {
+  width: 70% !important;
+  margin: auto !important;
+  z-index: 1;
+}
 .start .start-text h2 {
   margin: 0;
   color: #fff;
@@ -67,13 +101,15 @@
 
 .card {
   width: 300px;
+  height: 330px;
   background: #fff;
   border-radius: 35px;
   padding: 60px 15px 15px;
 }
 
 .card .image-card {
-  top: -7px;
+  top: 0px;
+  position: absolute;
   left: 0;
   width: 100%;
   text-align: center;
@@ -91,7 +127,12 @@
   font-size: 11px;
   color: #717171;
   font-weight: bold;
+  margin: 8px 0;
   
+}
+
+.card-btn{
+  margin-top: 10px;
 }
 
 .card .card-option {
@@ -127,6 +168,7 @@ border-right: 1px solid;
 .card .card-theme {
   border-top: 0.2px solid #bdbdbd;
   font-weight: bold;
+  min-height: 60px;
 }
 
 .card .card-theme .card-theme-item {
