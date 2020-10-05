@@ -143,7 +143,7 @@ const Heroes = () => {
 
   return (
     <div className="Heroes-container">
-      <OwlCarousel>
+      <OwlCarousel dots={true}>
         {renderCards()}
       </OwlCarousel>
     </div>
