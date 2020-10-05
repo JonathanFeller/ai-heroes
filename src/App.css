@@ -64,6 +64,10 @@ body {
   flex-direction: row;
 }
 
+.mascots img {
+  height: 200px;
+}
+
 .item {
   text-align: center;
 }
