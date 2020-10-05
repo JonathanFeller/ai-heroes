@@ -1,4 +1,5 @@
 .Heroes-container {
+  padding-top: calc((50vh - 60px) / 4);
   background-image: url("../assets/fondo-ingreso2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -155,10 +156,17 @@ border-right: 1px solid;
   outline: none;
   border: #fff;
   border-radius: 4px;
+  padding: 7px;
   -webkit-box-shadow: 10px 10px 27px -12px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 27px -12px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 27px -12px rgba(0,0,0,0.75);
   cursor: pointer;
+}
+
+.card-btn button.disabled {
+  color: #555;
+  background: #ccc;
+  cursor: not-allowed;
 }
 
 .image-card img {

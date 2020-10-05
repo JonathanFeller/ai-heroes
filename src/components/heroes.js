@@ -89,6 +89,15 @@ const Heroes = () => {
       occupation: "Mathematician And Human Computer",
       contribuitions: "The first African-American woman to supervise a goup of staff at the center, Machine computers in the early 1960s by teaching herself and her staff, Vaughan crater on the far side of the Moon was named in her honor",
       available: false
+    },
+    {
+      image: './assets/heroes/Hawking.png',
+      name: "Stephen Hawking",
+      quote: "Quiet people have the loudest minds.",
+      location: "England",
+      occupation: "Theoretical Physicist",
+      contribuitions: "Black holes, Relativity theory and Quantum Mechanic, Space-time singularities",
+      available: false
     }
   ];
 
@@ -123,7 +132,9 @@ const Heroes = () => {
             <p>{hero.contribuitions}</p>
           </div>
           <div className="card-btn">
-            {hero.available ? <button type="button" onClick={handleClick}>I want to meet him</button> : <div>Not available</div>}
+            <button className={!hero.available && 'disabled'} type="button" onClick={handleClick}>
+              {hero.available ? "I want to meet him" : "Not available yet"}
+            </button>
           </div>
         </div>
       </div>
