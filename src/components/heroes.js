@@ -19,7 +19,7 @@ const Heroes = props => {
     {
       image: './assets/heroes/Marie_Curie.png',
       name: "Marie Curie",
-      quote: "Life is not easy for any of us. But what of that? We must have perseverance and above all confidence in ourselves. We must believe that we are gifted for something and that this thing must be attained.",
+      quote: "Nothing in life is to be feared; it is only to be understood.",
       location: "Poland",
       occupation: "Physicist, Chemist",
       contribuitions: "Discovered radioactivity, Championed use of portable X- rays, Found polonium and radium",
@@ -40,7 +40,7 @@ const Heroes = props => {
       quote: "No great discovery was ever made without a bold guess.",
       location: "England",
       occupation: "Mathematician, Physicist, Astronomer, Chemist",
-      contribuitions: "Discovered the laws of gravity and motion, Invented calculus, Helped to shape our rational world view",
+      contribuitions: "Discovered the laws of gravity and motion, Invented calculus",
       available: false
     },
     {
@@ -58,7 +58,7 @@ const Heroes = props => {
       quote: "That's one small step for man, one giant leap for mankind.",
       location: "United States",
       occupation: "Astronaut, Aeronautical, Engineer",
-      contribuitions: "The first man to walk on the moon, He flew on two space missions",
+      contribuitions: "The first man to walk on the moon",
       available: false
     },
     {
@@ -85,7 +85,7 @@ const Heroes = props => {
       quote: "If you want do something, what does it matter where you are ranked?.",
       location: "India",
       occupation: "Astronaut, Engineer",
-      contribuitions: "First woman of Indian origin to go to space, Logged 30 days, 14 hours, and 54 minutes in space over the course of her two missions",
+      contribuitions: "First woman of Indian origin to go to space",
       available: false
     },
     {
@@ -94,7 +94,7 @@ const Heroes = props => {
       quote: "I changed what I could and what I couldn't, I endured.",
       location: "United States",
       occupation: "Mathematician And Human Computer",
-      contribuitions: "The first African-American woman to supervise a goup of staff at the center, Machine computers in the early 1960s by teaching herself and her staff, Vaughan crater on the far side of the Moon was named in her honor",
+      contribuitions: "The first African-American woman to supervise a group of staff at the center, Machine computers in the early 1960s",
       available: false
     },
     {
