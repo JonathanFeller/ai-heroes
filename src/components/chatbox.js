@@ -5,8 +5,11 @@ const ChatBox = () => {
   const [message, setMessage] = useState('');
 
   const [messages, setMessages] = useState([
-    { text: 'Hi, who are you?', type: 'question' },
-    { text: 'I\'m a german born scientist', type: 'answer' },
+    { text: "Who are you?", type: 'question' },
+    { text: "Hi! My name is Albert Einstein.", type: 'answer' },
+    { text: "I am a German born theoretical physicist.", type: 'answer' },
+    { text: "Maybe mostly known because of my equation E=mc^2.", type: 'answer' },
+    { text: "What would you like to know more about?", type: 'answer' },
   ]);
 
   const renderChat = () => messages.map((msg, i) =>

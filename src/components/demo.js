@@ -8,7 +8,7 @@ const Demo = () => (
       <div className="blackboard">
         <div className="user-account">
           <iframe title="video" width="100%" height="100%"
-            src="https://www.youtube.com/embed/izDxpfOIF6M?rel=0&amp;autoplay=1&mute=0&loop=1" frameBorder="0"
+            src="https://www.youtube.com/embed/tFxQ5Ba_P5Q?rel=0&amp;autoplay=1&mute=0&loop=1" frameBorder="0"
             autoplay
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen></iframe>
